@@ -39,3 +39,8 @@ before_script:
     - grep "#define BOOST_VERSION " /usr/include/boost/version.hpp
     - dpkg -l libgtest-dev
     - valgrind --version
+
+script:
+    - date
+    - ls -al
+    - make test
