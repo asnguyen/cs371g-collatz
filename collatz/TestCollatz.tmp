@@ -1,60 +1,37 @@
-==14906== Memcheck, a memory error detector
-==14906== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
-==14906== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
-==14906== Command: ./TestCollatz
-==14906== 
+==16082== Memcheck, a memory error detector
+==16082== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==16082== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==16082== Command: ./TestCollatz
+==16082== 
 Running main() from gtest_main.cc
 [==========] Running 7 tests from 1 test case.
 [----------] Global test environment set-up.
 [----------] 7 tests from CollatzFixture
 [ RUN      ] CollatzFixture.read
-[       OK ] CollatzFixture.read (17 ms)
+[       OK ] CollatzFixture.read (16 ms)
 [ RUN      ] CollatzFixture.eval_1
-TestCollatz.c++:43: Failure
-Value of: v
-  Actual: 20
-Expected: 1
-[  FAILED  ] CollatzFixture.eval_1 (33 ms)
+[       OK ] CollatzFixture.eval_1 (3 ms)
 [ RUN      ] CollatzFixture.eval_2
-TestCollatz.c++:47: Failure
-Value of: v
-  Actual: 125
-Expected: 1
-[  FAILED  ] CollatzFixture.eval_2 (5 ms)
+[       OK ] CollatzFixture.eval_2 (2 ms)
 [ RUN      ] CollatzFixture.eval_3
-TestCollatz.c++:51: Failure
-Value of: v
-  Actual: 89
-Expected: 1
-[  FAILED  ] CollatzFixture.eval_3 (3 ms)
+[       OK ] CollatzFixture.eval_3 (1 ms)
 [ RUN      ] CollatzFixture.eval_4
-TestCollatz.c++:55: Failure
-Value of: v
-  Actual: 174
-Expected: 1
-[  FAILED  ] CollatzFixture.eval_4 (3 ms)
+[       OK ] CollatzFixture.eval_4 (2 ms)
 [ RUN      ] CollatzFixture.print
-[       OK ] CollatzFixture.print (8 ms)
+[       OK ] CollatzFixture.print (7 ms)
 [ RUN      ] CollatzFixture.solve
-[       OK ] CollatzFixture.solve (6 ms)
-[----------] 7 tests from CollatzFixture (85 ms total)
+[       OK ] CollatzFixture.solve (5 ms)
+[----------] 7 tests from CollatzFixture (42 ms total)
 
 [----------] Global test environment tear-down
-[==========] 7 tests from 1 test case ran. (112 ms total)
-[  PASSED  ] 3 tests.
-[  FAILED  ] 4 tests, listed below:
-[  FAILED  ] CollatzFixture.eval_1
-[  FAILED  ] CollatzFixture.eval_2
-[  FAILED  ] CollatzFixture.eval_3
-[  FAILED  ] CollatzFixture.eval_4
-
- 4 FAILED TESTS
-==14906== 
-==14906== HEAP SUMMARY:
-==14906==     in use at exit: 0 bytes in 0 blocks
-==14906==   total heap usage: 480 allocs, 480 frees, 86,562 bytes allocated
-==14906== 
-==14906== All heap blocks were freed -- no leaks are possible
-==14906== 
-==14906== For counts of detected and suppressed errors, rerun with: -v
-==14906== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[==========] 7 tests from 1 test case ran. (70 ms total)
+[  PASSED  ] 7 tests.
+==16082== 
+==16082== HEAP SUMMARY:
+==16082==     in use at exit: 0 bytes in 0 blocks
+==16082==   total heap usage: 320 allocs, 320 frees, 56,005 bytes allocated
+==16082== 
+==16082== All heap blocks were freed -- no leaks are possible
+==16082== 
+==16082== For counts of detected and suppressed errors, rerun with: -v
+==16082== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
