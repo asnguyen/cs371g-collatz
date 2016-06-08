@@ -135,3 +135,4 @@ status:
 	git status
 
 test: html Collatz.log RunCollatz.tmp TestCollatz.tmp collatz-tests check
+
