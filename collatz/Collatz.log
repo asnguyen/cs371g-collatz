@@ -1,83 +1,54 @@
-commit 912bf30a38703ad1de6c5cde40954d6c979e86f2
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Tue Jun 7 12:34:18 2016 -0500
+commit 64e28d692ccbc251ddd44c6116457d7bea5588a8
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 7 18:46:51 2016 -0500
 
-    another commit
+    travis attempt 2. added the makefile
 
-commit 2d47a2332e7bb48ceb06eb34ff7dd06e5b998f37
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Tue Jun 7 12:32:49 2016 -0500
+commit 42cae19bf5d1acc2199fb1d5735a171521161864
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 7 18:39:17 2016 -0500
 
-    another commit
+    travis attempt 1
 
-commit 0952b089b3d926e120d01c39460ef60fa0b3dfb1
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Tue Jun 7 12:25:22 2016 -0500
+commit 0b9162e6e7886df30ff207ee2954709c4702c68c
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 7 18:29:14 2016 -0500
 
-    another commit
+    fixed eval in TestCollatz
 
-commit 790907b4022b632850a323b7a215064cf4a5ac1f
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Tue Jun 7 12:20:19 2016 -0500
+commit 003bf80d0bd751fe306c3efa435e878c92cb2661
+Merge: cd7783b 6843d91
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 7 18:22:18 2016 -0500
 
-    another commit
+    fixed the .travis.yml file
 
-commit 57504768667ef39ab5bcf75b897f3e27f63f3eba
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Tue Jun 7 12:19:52 2016 -0500
+commit cd7783b743e1f8e1210e9820e0eac0b12b68971b
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 7 18:20:50 2016 -0500
 
-    another commit
+    fixed the .travis.yml file
 
-commit 4e971577cba13d9115c2e5ad6e13f8ddba06a69f
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Tue Jun 7 12:16:32 2016 -0500
+commit 6843d912afc21f4c62ae838f7e8c8691dceb8eed
+Author: asnguyen <asnguyen@users.noreply.github.com>
+Date:   Tue Jun 7 18:19:35 2016 -0500
 
-    another commit
+    Delete .travis.yml
 
-commit 705d1b694e208e630e12ac8bfb3e649ff770de0d
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Tue Jun 7 12:11:36 2016 -0500
+commit 5b13f330598aee14ba7fbc9060c71a9069e1be7b
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 7 18:02:49 2016 -0500
 
-    another commit
+    Implemented the simplest possible solution. fixes #4
 
-commit 7de10dab890d78e5016638b4de46bbf9172e4f8a
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Mon Jun 6 23:52:30 2016 -0500
+commit 007de534fd5ea97ce6b848fc64abcb15b11e5127
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 7 17:21:37 2016 -0500
 
-    another commit
+    RunCollatz.c++ and TestCollatz.c++ succeed
 
-commit ada9a916e96ac5c0710d9b39dfc39a737e27f781
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Sun Jun 5 09:01:24 2016 -0500
+commit 65522c7589556c20c7f7a70440255a27e46e8074
+Author: asnguyen <asnguyen@users.noreply.github.com>
+Date:   Tue Jun 7 08:19:59 2016 -0500
 
-    another commit
-
-commit 88c51dd090e2f2bca1f8cfaa4d4702a70cde670f
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Sun Jun 5 08:44:59 2016 -0500
-
-    another commit
-
-commit fedc14389f775f36affe7ae4b3a083dd8e1bc6fe
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Sun Jun 5 08:39:36 2016 -0500
-
-    another commit
-
-commit 70ec2594974bcf64cbed0a965a891cca5583e26e
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Thu Jun 2 18:17:07 2016 -0500
-
-    another commit
-
-commit 4166bc6ac4c6ce5bbea7b59c5d7dd68a6ff1aaaf
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Thu Jun 2 18:00:20 2016 -0500
-
-    another commit
-
-commit 20b9a9f840fd2db2dba2766fbc381714887fbb67
-Author: Glenn Downing <downing@cs.utexas.edu>
-Date:   Thu Jun 2 17:59:49 2016 -0500
-
-    first commit
+    Update .gitignore
