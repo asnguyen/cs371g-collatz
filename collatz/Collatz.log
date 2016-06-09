@@ -1,3 +1,21 @@
+commit 20aea0a969d35fd30453131e8415843ae08bcf55
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 7 19:13:19 2016 -0500
+
+    all .out files should be there
+
+commit a5028407289e37e8fd05fd9635df0b129b804258
+Author: asnguyen <asnguyen@users.noreply.github.com>
+Date:   Tue Jun 7 19:12:31 2016 -0500
+
+    Update .gitignore
+
+commit 008aacb08270da1ee84a4a42d5ba71dd0e988ea9
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 7 19:04:07 2016 -0500
+
+    travis attempt 3. RunCollatz.out should be there
+
 commit 64e28d692ccbc251ddd44c6116457d7bea5588a8
 Author: Anthony Nguyen <anthony@cs.utexas.edu>
 Date:   Tue Jun 7 18:46:51 2016 -0500
