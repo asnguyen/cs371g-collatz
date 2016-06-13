@@ -44,7 +44,7 @@ int collatz_eval (int i, int j) {
     int a;
     for(a =0; a<=19;++a)
     {
-        my_array[((int)exp2(a)] = a+1;
+        my_array[((int)exp2(a))] = a+1;
     }
     //finishes cache
     int max=0;
