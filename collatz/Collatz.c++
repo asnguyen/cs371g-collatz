@@ -34,7 +34,7 @@ int collatz_eval (int i, int j) {
     int max=0;
     int temp_max;
     int k;
-    for(k=i;k<=j;k++)
+    for(k=std::min(i,j);k<=std::max(i,j);k++)
     {
         int temp_num=k;
         temp_max=1;
@@ -43,14 +43,30 @@ int collatz_eval (int i, int j) {
             if(temp_num%2==0)
             {
                 temp_num /= 2;
-                temp_max++;
             }
             else
             {
-                temp_num=3*(temp_num)+1;
-                temp_max++;
+                temp_num = 3*temp_num+1;
+            }
+            if(temp_num<1000000)
+            {
+                if(my_array[temp_num]!=0)
+                {
+                    temp_max+=my_array[temp_num];
+                    temp_num=1;
+                }
+                else
+                {
+                    temp_max++;
+                }
+            }
+            else
+            {
+                if(temp_num>1000000)
+                    temp_max++;
             }
         }
+        my_array[k]=temp_max;
         max=std::max(max,temp_max);
 
     }
