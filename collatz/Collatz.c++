@@ -9,7 +9,15 @@
 // --------
 
 #include <cassert>  // assert
-#include <iostream> // endl, istream, ostream
+#include <iostream> // endl, istream, ostream#include <string>
+#include <utility>
+#include <fstream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+#include <math.h>
+#include <array>
+
 
 #include "Collatz.h"
 
@@ -31,6 +39,14 @@ bool collatz_read (istream& r, int& i, int& j) {
 
 int collatz_eval (int i, int j) {
     assert(i>0 && j>0);
+    //making cache
+    int my_array[1000000];
+    int a;
+    for(a =0; a<=19;++a)
+    {
+        my_array[((int)exp2(a)] = a+1;
+    }
+    //finishes cache
     int max=0;
     int temp_max;
     int k;
