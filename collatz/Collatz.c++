@@ -30,6 +30,7 @@ bool collatz_read (istream& r, int& i, int& j) {
 // ------------
 
 int collatz_eval (int i, int j) {
+    assert(i>0 && j>0);
     int max=0;
     int temp_max;
     int k;
@@ -53,6 +54,7 @@ int collatz_eval (int i, int j) {
         max=std::max(max,temp_max);
 
     }
+    assert(max>0);
     return max;}
 
 // -------------

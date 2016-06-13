@@ -49,15 +49,9 @@ int collatz_eval (int i, int j) {
             }
             else
             {
-            	//temp_num = temp_num+ (.5 * temp_num) +1;
-                //temp_num=3*(temp_num)+1;
                 temp_num = temp_num + (temp_num >> 1) +1;
                 temp_max+=2;
             }
-     
-            
-            //cout << temp_num<<endl;
-            //temp_max+=2;
         }
         max=std::max(max,temp_max);
 
