@@ -1,3 +1,21 @@
+commit a0fcd503065555a5fab96fa729066cf9d53e9987
+Author: asnguyen <asnguyen@users.noreply.github.com>
+Date:   Tue Jun 14 14:43:23 2016 -0500
+
+    Update .travis.yml
+
+commit d89f9071232447fa812a6bdfd097b85e82759d8e
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 14 14:40:35 2016 -0500
+
+    another commit
+
+commit 94cf542523694f190da7fd7fa414e9a79fdb8546
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 14 14:36:46 2016 -0500
+
+    fixed memory leak and got rid of new/delete
+
 commit e1bf898849475f8f7847620cccc54e22ca711fc4
 Author: Anthony Nguyen <anthony@cs.utexas.edu>
 Date:   Tue Jun 14 14:35:40 2016 -0500
