@@ -19,7 +19,7 @@
 #include <utility>
 
 #include "Collatz.h"
-#define ARRAY_SIZE 1000000
+#define ARRAY_SIZE 340000
 
 using namespace std;
 
@@ -37,18 +37,16 @@ bool collatz_read(istream &r, int &i, int &j) {
 // ------------
 // collatz_eval
 // ------------
-
 int collatz_eval(int i, int j) {
   assert(i > 0 && j > 0);
 // start making cache
 #ifdef ARRAY_SIZE
-  int *my_array = new int[ARRAY_SIZE];
-  //int my_array[ARRAY_SIZE];
+  int my_array[ARRAY_SIZE];
   for (int b = 0; b < ARRAY_SIZE; ++b) {
   my_array[b] = 0;
    //^initializes the array
   }
-  for (int a = 0; a <= 19; ++a) {
+  for (int a = 0; a <=18; ++a){
     my_array[((int)exp2(a))] = a + 1;
     //^fills the cache with the cycle length of all powers of 2
   }
@@ -60,20 +58,23 @@ int collatz_eval(int i, int j) {
     int temp_num = k;
     temp_max = 1;
     while (temp_num != 1) {
-      if (temp_num % 2 == 0) {
+#ifndef ARRAY_SIZE
+    if (temp_num % 2 == 0) {
         temp_num /= 2;
         ++temp_max;
       } else {
         temp_num = temp_num + (temp_num >> 1) + 1;
         temp_max += 2;
       }
+#endif
 #ifdef ARRAY_SIZE
       if (temp_num % 2 == 0) {
         temp_num /= 2;
       } else {
         temp_num = 3 * temp_num + 1;
       }
-      if (temp_num < ARRAY_SIZE) // test to make sure the temp_num is within the
+      //assert(temp_num > 350000);
+      if (temp_num <= ARRAY_SIZE) // test to make sure the temp_num is within the
                               // indices of the cache
       {
         if (my_array[temp_num] != 0) // cache look up
@@ -86,22 +87,19 @@ int collatz_eval(int i, int j) {
           temp_max++;
         }
       } else {
+	//assert(false);
         if (temp_num > ARRAY_SIZE)
           temp_max++;
       }
 #endif
     }
 #ifdef ARRAY_SIZE
-    my_array[k] = temp_max; //sets the cycle length to use for next time
+    if(k<=ARRAY_SIZE)
+      my_array[k] = temp_max; //sets the cycle length to use for next time
 #endif
     max = std::max(max, temp_max);
   }
   assert(max > 0);
-
-#ifdef ARRAY_SIZE
-  delete[] my_array; //frees the memory that was used
-  my_array = NULL;
-#endif
   return max;
 }
 
