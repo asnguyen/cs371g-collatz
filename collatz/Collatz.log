@@ -1,3 +1,9 @@
+commit 62eda9629018a5a4ac32dc14b6bacc5f2c55284f
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Mon Jun 13 19:12:33 2016 -0500
+
+    solved #8 : Implement the simplest optimization
+
 commit 22f25bcdd4f2d3cc1c37f126186db53816ce332e
 Author: Nguyen <asn579@wireless-10-145-135-33.public.utexas.edu>
 Date:   Mon Jun 13 13:58:01 2016 -0500
