@@ -1,3 +1,9 @@
+commit e0a3cd155a345eb87847ca00f9e7014f89e39848
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 14 10:15:58 2016 -0500
+
+    travis ci failure should be resolved now
+
 commit 4eb1b6d3c7500625f650f3619aa117b804722a91
 Author: Anthony Nguyen <anthony@cs.utexas.edu>
 Date:   Tue Jun 14 10:10:19 2016 -0500
