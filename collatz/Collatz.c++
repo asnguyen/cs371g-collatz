@@ -47,10 +47,12 @@ int collatz_eval (int i, int j) {
         for (int b=0;b<1000000;++b)
         {
            my_array[b]=0;
+           //^initializes the array
         }
         for(int a=0;a<=19;++a)
         {
-            my_array[((int)exp2(a))]=a+1;
+            my_array[((int)exp2(a))]=a+1;   
+            //^fills the cache with the cycle length of all powers of 2
         }
     #endif
     //finished making cache
@@ -81,15 +83,17 @@ int collatz_eval (int i, int j) {
                 {
                     temp_num = 3*temp_num + 1;
                 }
-                if(temp_num<1000000)
+                if(temp_num<1000000)//test to make sure the temp_num is within the indices of the cache
                 {
-                    if(my_array[temp_num]!=0)
+                    if(my_array[temp_num]!=0)//cache look up
                     {
+                        //cache hit
                         temp_max+=my_array[temp_num];
                         temp_num=1;
                     }
                     else
                     {
+                        //cache miss
                         temp_max++;
                     }
                 }
@@ -101,7 +105,7 @@ int collatz_eval (int i, int j) {
             #endif
         }
         #ifdef ARRAY_SIZE
-            my_array[k]=temp_max;
+            my_array[k]=temp_max;   //frees the memory that we used
         #endif
         max=std::max(max,temp_max);
 

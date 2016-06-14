@@ -10,10 +10,10 @@ FILES :=                              \
     RunCollatz.out                    \
     TestCollatz.c++                   \
     TestCollatz.out					  \
-    #collatz-tests/asn579-RunCollatz.in   \
-    #collatz-tests/asn579-RunCollatz.out  \
-    #collatz-tests/asn579-TestCollatz.c++ \
-    #collatz-tests/asn579-TestCollatz.out \
+    collatz-tests/asn579-RunCollatz.in   \
+    collatz-tests/asn579-RunCollatz.out  \
+    collatz-tests/asn579-TestCollatz.c++ \
+    collatz-tests/asn579-TestCollatz.out \
 
 CLANG-FORMAT := clang-format
 CXXFLAGS     := -pedantic -std=c++11 -Wall
