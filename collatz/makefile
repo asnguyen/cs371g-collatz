@@ -9,13 +9,11 @@ FILES :=                              \
     RunCollatz.in                     \
     RunCollatz.out                    \
     TestCollatz.c++                   \
-    TestCollatz.out
-
-# uncomment these:
-#    collatz-tests/EID-RunCollatz.in   \
-#    collatz-tests/EID-RunCollatz.out  \
-#    collatz-tests/EID-TestCollatz.c++ \
-#    collatz-tests/EID-TestCollatz.out \
+    TestCollatz.out					  \
+    #collatz-tests/asn579-RunCollatz.in   \
+    #collatz-tests/asn579-RunCollatz.out  \
+    #collatz-tests/asn579-TestCollatz.c++ \
+    #collatz-tests/asn579-TestCollatz.out \
 
 CLANG-FORMAT := clang-format
 CXXFLAGS     := -pedantic -std=c++11 -Wall

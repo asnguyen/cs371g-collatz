@@ -1,3 +1,58 @@
+commit 22f25bcdd4f2d3cc1c37f126186db53816ce332e
+Author: Nguyen <asn579@wireless-10-145-135-33.public.utexas.edu>
+Date:   Mon Jun 13 13:58:01 2016 -0500
+
+    another commit
+
+commit de2a289f11216b1cd9fe15f8a51f838d4fed0a86
+Author: Nguyen <asn579@wireless-10-145-135-33.public.utexas.edu>
+Date:   Mon Jun 13 13:36:11 2016 -0500
+
+    Fixed #8 : implement the simplest optimization
+
+commit ac1cc596d0566e3e85e18fd59783437e26c11604
+Author: Nguyen <asn579@wireless-10-145-135-33.public.utexas.edu>
+Date:   Mon Jun 13 13:33:26 2016 -0500
+
+    Fixed #8 : implement the simplest optimization
+
+commit 7b581704d7185702d48286450986ea49e60da34d
+Author: Nguyen <asn579@wireless-10-145-135-33.public.utexas.edu>
+Date:   Mon Jun 13 13:17:09 2016 -0500
+
+    Fixed #8 : implement the simplest optimization
+
+commit 077f76d2bfa1aff151a1340fac978138c91023d8
+Author: Nguyen <asn579@wireless-10-145-116-140.public.utexas.edu>
+Date:   Mon Jun 13 09:13:35 2016 -0500
+
+    added more test to RunCollatz.in and RunCollatz.out. this closes #7
+
+commit 0eeb2094da19dcc1d31a2cbb3e56cb8b2b89279c
+Author: Nguyen <asn579@wireless-10-145-135-33.public.utexas.edu>
+Date:   Thu Jun 9 16:13:57 2016 -0500
+
+    UVACollatz.c++ is accepted
+
+commit 8680cb3fddc785e12de450a6f3083f960b22a4e4
+Merge: 20aea0a af50c3a
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Thu Jun 9 09:38:17 2016 -0500
+
+    Fixed TestCollatz.c++
+
+commit af50c3aca631e64d3b9f0ac33d2241ecf82b77f7
+Author: Nguyen <asn579@wireless-10-145-135-33.public.utexas.edu>
+Date:   Thu Jun 9 09:17:48 2016 -0500
+
+    adding more unit test to TestCollatz.c++ #3
+
+commit a9fef42c890f0204c1fcc84b8af230ae3aaf42da
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 7 19:35:07 2016 -0500
+
+    another commit
+
 commit 20aea0a969d35fd30453131e8415843ae08bcf55
 Author: Anthony Nguyen <anthony@cs.utexas.edu>
 Date:   Tue Jun 7 19:13:19 2016 -0500
@@ -50,6 +105,12 @@ Date:   Tue Jun 7 18:20:50 2016 -0500
 commit 6843d912afc21f4c62ae838f7e8c8691dceb8eed
 Author: asnguyen <asnguyen@users.noreply.github.com>
 Date:   Tue Jun 7 18:19:35 2016 -0500
+
+    Delete .travis.yml
+
+commit 5837b092e01416676fa35c25adf865c8c177f875
+Author: asnguyen <asnguyen@users.noreply.github.com>
+Date:   Tue Jun 7 18:19:16 2016 -0500
 
     Delete .travis.yml
 

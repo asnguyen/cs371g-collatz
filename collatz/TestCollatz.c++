@@ -15,6 +15,7 @@
 #include <string>   // string
 #include <utility>  // pair
 
+
 #include "gtest/gtest.h"
 
 #include "Collatz.h"
@@ -56,13 +57,11 @@ TEST(CollatzFixture, read_3)
 }
 TEST(CollatzFixture, read_4) 
 {
-    istringstream r("900 1000\n");
+    istringstream r("");
     int           i;
     int           j;
     const bool b = collatz_read(r, i, j);
-    ASSERT_TRUE(b);
-    ASSERT_EQ( 900, i);
-    ASSERT_EQ( 1000, j);
+    ASSERT_FALSE(b);
 }
 //added test end
 
@@ -124,27 +123,27 @@ TEST(CollatzFixture, solve_1) {
     ostringstream w;
     collatz_solve(r, w);
     ASSERT_EQ("1 10 20\n100 200 125\n201 210 89\n900 1000 174\n", w.str());}
-/*added test begin
+//added test begin
 TEST(CollatzFixture, solve_2)
 {
-    istringstream r();
+    istringstream r("6 11\n71 94\n62 61\n");
     ostringstream w;
     collatz_solve(r,w);
-    ASSERT_EQ();
+    ASSERT_EQ("6 11 20\n71 94 116\n62 61 108\n", w.str());
 }
 TEST(CollatzFixture, solve_3)
 {
-    istringstream r();
+    istringstream r("840 408\n47 61\n40 435\n");
     ostringstream w;
     collatz_solve(r,w);
-    ASSERT_EQ();
+    ASSERT_EQ("840 408 171\n47 61 113\n40 435 144\n", w.str());
 }
 TEST(CollatzFixture, solve_4)
 {
-    istringstream r();
+    istringstream r("83 3350\n5 29741\n6 63557\n");
     ostringstream w;
     collatz_solve(r,w);
-    ASSERT_EQ();
+    ASSERT_EQ("83 3350 217\n5 29741 308\n6 63557 340\n", w.str());
 }
 //added test end
 

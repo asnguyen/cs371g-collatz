@@ -20,6 +20,7 @@
 
 
 #include "Collatz.h"
+//#define array_size 1000000
 
 using namespace std;
 
@@ -39,31 +40,58 @@ bool collatz_read (istream& r, int& i, int& j) {
 
 int collatz_eval (int i, int j) {
     assert(i>0 && j>0);
+    //start making cache
+    int *my_array=new int[1000000];
+    for (int b=0;b<1000000;++b)
+    {
+        my_array[b]=0;
+    }
+    for(int a=0;a<=19;++a)
+    {
+        my_array[((int)exp2(a))]=a+1;
+    }
+    //finished making cache
     int max=0;
-    int temp_max;
-    int k;
-    for(k=std::min(i,j);k<=std::max(i,j);k++)
+    int temp_max=1;
+    for(int k=std::min(i,j);k<=std::max(i,j);k++)
     {
         int temp_num=k;
         temp_max=1;
         while(temp_num!=1)
         {
-            
             if(temp_num%2==0)
             {
                 temp_num /= 2;
-                temp_max++;
             }
             else
             {
-                temp_num = temp_num + (temp_num >> 1) +1;
-                temp_max+=2;
+                temp_num = 3*temp_num + 1;
+            }
+            if(temp_num<1000000)
+            {
+                if(my_array[temp_num]!=0)
+                {
+                    temp_max+=my_array[temp_num];
+                    temp_num=1;
+                }
+                else
+                {
+                    temp_max++;
+                }
+            }
+            else
+            {
+                if(temp_num>1000000)
+                temp_max++;
             }
         }
+        my_array[k]=temp_max;
         max=std::max(max,temp_max);
 
     }
-    assert(max>0);
+    assert(max>0); 
+    delete[] my_array;
+    my_array=NULL;
     return max;}
 
 // -------------
