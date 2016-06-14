@@ -1,3 +1,9 @@
+commit f3e64744b19e2afa24f96a293ead8c5b93c2d22d
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 14 15:01:57 2016 -0500
+
+    cleaning up memory leak
+
 commit a0fcd503065555a5fab96fa729066cf9d53e9987
 Author: asnguyen <asnguyen@users.noreply.github.com>
 Date:   Tue Jun 14 14:43:23 2016 -0500
