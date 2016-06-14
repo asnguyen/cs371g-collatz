@@ -1,3 +1,15 @@
+commit 7f32ff3ae7dd2c5b45117b3981db1c19aa67c123
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 14 16:51:14 2016 -0500
+
+    got rid of new/delete
+
+commit 2fe7bd9a19e90eb5be85132424fcbd09a5b3991a
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 14 15:05:26 2016 -0500
+
+    another commit to clean memory leak
+
 commit f3e64744b19e2afa24f96a293ead8c5b93c2d22d
 Author: Anthony Nguyen <anthony@cs.utexas.edu>
 Date:   Tue Jun 14 15:01:57 2016 -0500
