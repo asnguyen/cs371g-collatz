@@ -19,7 +19,7 @@
 #include <utility>
 
 #include "Collatz.h"
-#define ARRAY_SIZE 340000
+#define ARRAY_SIZE 300000
 
 using namespace std;
 
