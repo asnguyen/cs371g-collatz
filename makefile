@@ -32,7 +32,7 @@ else
 endif
 
 collatz-tests:
-	git clone https://github.com/cs371g-summer-2016/collatz-tests
+	git clone https://github.com/cs371g-summer-2016/collatz-tests.git
 
 html: Doxyfile Collatz.h Collatz.c++ RunCollatz.c++ TestCollatz.c++
 	doxygen Doxyfile

@@ -1,3 +1,21 @@
+commit bd3c4215967b6baf8c3ffd10dc91f855fb2dcd25
+Author: Nguyen <asn579@wireless-10-145-135-33.public.utexas.edu>
+Date:   Tue Jun 14 10:56:10 2016 -0500
+
+    ready to submit
+
+commit 94e05855e01b9c0748ea938328e7a688a61c3d2e
+Author: Nguyen <asn579@wireless-10-145-135-33.public.utexas.edu>
+Date:   Tue Jun 14 10:49:10 2016 -0500
+
+    remove sublfolder
+
+commit 6d4900357986ceaaa728d1e43c7768838846b654
+Author: Anthony Nguyen <anthony@cs.utexas.edu>
+Date:   Tue Jun 14 10:45:22 2016 -0500
+
+    hopefully fixed the collatz-test problem
+
 commit 04f21ce252b62b56002c2c35e3c6174f666f8b79
 Author: Anthony Nguyen <anthony@cs.utexas.edu>
 Date:   Tue Jun 14 10:26:24 2016 -0500
