@@ -93,7 +93,7 @@ int collatz_eval(int i, int j) {
 #endif
     }
 #ifdef ARRAY_SIZE
-    my_array[k] = temp_max; 
+    my_array[k] = temp_max; //sets the cycle length to use for next time
 #endif
     max = std::max(max, temp_max);
   }
